@@ -1,19 +1,23 @@
 <template>
-  <PadreDeportes/>
+  <!-- <PadreDeportes/>
   <hr>
   <PadreNumeros/>
+  <hr> -->
+  <ComicsComponent/>
   <hr>
 </template>
 
 <script>
-import PadreDeportes from './components/PadreDeportes.vue';
-import PadreNumeros from './components/PadreNumeros.vue';
+import ComicsComponent from './components/ComicsComponent.vue';
+//import PadreDeportes from './components/PadreDeportes.vue';
+//import PadreNumeros from './components/PadreNumeros.vue';
 
 export default {
   name: 'App',
   components: {
-    PadreDeportes,
-    PadreNumeros
+    // PadreDeportes,
+    // PadreNumeros,
+    ComicsComponent,
   }
 }
 </script>
