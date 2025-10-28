@@ -1,6 +1,7 @@
 <template>
   <h1>PADRE NUMEROS</h1>
   <h2 style="background-color:yellow" v-if="total !=0">La suma total es: {{total}}</h2>
+  <!-- puedes poner paréntesis si quieres al @click function  -->
   <button @click="generarNumber">GENERA NUEVOS NUMEROS</button>
   <ul>
     <li v-for="num in numbers" :key="num">
@@ -13,8 +14,8 @@
 <script>
 import HijoNumero from './HijoNumero.vue';
 export default {
-  components: { HijoNumero },
-name:"padreNumeros",
+    name:"padreNumeros",
+    components: { HijoNumero },
 data(){
     return{
         numbers:[77,93,22,40,65,9],

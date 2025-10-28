@@ -2,6 +2,7 @@
   <PadreDeportes/>
   <hr>
   <PadreNumeros/>
+  <hr>
 </template>
 
 <script>

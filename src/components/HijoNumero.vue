@@ -1,7 +1,7 @@
 <template>
   <h1>Hijo  numero: {{ numero }}</h1>
   <button @click="seleccionarNumber">
-    Seleccionar número
+    Seleccionar número {{ numero }}
   </button>
 </template>
 
@@ -13,7 +13,7 @@ methods:{
     seleccionarNumber(){
     console.log("Soy el hijo");
     //LLAMAMOS AL MÉTODO DEL PADRE
-    this.$emit("sumarNumbersParent",this.numero)
+    this.$emit("sumarNumbersParent",this.numero);
   }
 }
 }
