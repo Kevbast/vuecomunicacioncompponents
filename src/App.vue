@@ -2,13 +2,17 @@
   <!-- <PadreDeportes/>
   <hr>
   <PadreNumeros/>
-  <hr> -->
+  <hr> 
   <ComicsComponent/>
+  <SeleccionMultiple/>-->
+  <SumaCheckbox/>
   <hr>
 </template>
 
 <script>
-import ComicsComponent from './components/ComicsComponent.vue';
+import SumaCheckbox from './components/SumaCheckbox.vue';
+//import SeleccionMultiple from './components/SeleccionMultiple.vue';
+//import ComicsComponent from './components/ComicsComponent.vue';
 //import PadreDeportes from './components/PadreDeportes.vue';
 //import PadreNumeros from './components/PadreNumeros.vue';
 
@@ -17,7 +21,9 @@ export default {
   components: {
     // PadreDeportes,
     // PadreNumeros,
-    ComicsComponent,
+    //ComicsComponent,
+    //SeleccionMultiple,
+    SumaCheckbox
   }
 }
 </script>
