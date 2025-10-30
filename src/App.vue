@@ -1,16 +1,13 @@
 <template>
-  <!-- <PadreDeportes/>
-  <hr>
-  <PadreNumeros/>
-  <hr> 
-  <ComicsComponent/>
-  <SeleccionMultiple/>-->
-  <SumaCheckbox/>
-  <hr>
+  <MenuComponent/>
+
+  <router-view></router-view>
 </template>
 
 <script>
-import SumaCheckbox from './components/SumaCheckbox.vue';
+import MenuComponent from './components/MenuComponent.vue';
+
+//import SumaCheckbox from './components/SumaCheckbox.vue';
 //import SeleccionMultiple from './components/SeleccionMultiple.vue';
 //import ComicsComponent from './components/ComicsComponent.vue';
 //import PadreDeportes from './components/PadreDeportes.vue';
@@ -23,7 +20,8 @@ export default {
     // PadreNumeros,
     //ComicsComponent,
     //SeleccionMultiple,
-    SumaCheckbox
+    //SumaCheckbox
+    MenuComponent,
   }
 }
 </script>
