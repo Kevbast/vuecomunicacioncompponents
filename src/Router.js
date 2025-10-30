@@ -6,6 +6,7 @@ import ComicsComponent from "./components/ComicsComponent.vue";
 import SumaCheckbox from "./components/SumaCheckbox.vue";
 import PadreNumeros from "./components/PadreNumeros.vue";
 import NumeroDoble from "./components/NumeroDoble.vue";
+import TablaMultiplicar from "./components/TablaMultiplicar.vue";
 
 const myRoutes=[
     {path:"/" ,component: HelloWorld},
@@ -15,6 +16,7 @@ const myRoutes=[
     {path:"/selectmulti" ,component: SeleccionMultiple},
     {path:"/sumacheckbox" ,component: SumaCheckbox},
     {path:"/numeroDoble/:numero?" ,component: NumeroDoble},//PASAMOS EL PARÁMETRO CON RUTAS,OPCIONAL
+    {path:"/tablamultiplicar/:numero" ,component: TablaMultiplicar},//esta vez obligatorio
 ]
 const router = createRouter({
     history:createWebHistory(),

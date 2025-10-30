@@ -10,7 +10,18 @@
                 <li><router-link to="/selectmulti">Selección múltiple</router-link></li>
                 <li><router-link to="/sumacheckbox">Checkboxs</router-link></li>
                 <li><router-link to="/numeroDoble">Numero Doble</router-link></li>
-                <li><router-link to="/numeroDoble/14">Numero Doble 14</router-link></li>
+                
+                <li v-for="num in numeros" :key="num">
+                    <!-- AQUI YA APLICAMOS LA LÓGICA al usar :to ,tener cuidado con los espacios-->
+                <router-link :to="'/numeroDoble/'+ num">Numero Doble {{ num }}</router-link>
+                </li>
+
+                <li v-for="num in numeros" :key="num">
+                    <!-- AQUI YA APLICAMOS LA LÓGICA al usar :to ,tener cuidado con los espacios-->
+                <router-link :to="'/tablamultiplicar/'+ num">Tabla del {{ num }}</router-link>
+                </li>
+
+
             </ul>
         </div>
     </nav>
@@ -19,6 +30,12 @@
 <script>
 export default {
     name: "MenuComponent",
+    data(){
+        return{
+            numeros:[77,666,936],
+
+        }
+    }
 };
 </script>
 
